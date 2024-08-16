@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionar</title>
+</head>
+<body>
+    <h3>Redirecionando...</h3>
+    <script>
+        const loc = window.location.href
+        const locSplited = loc.split('/')
+        const name = locSplited[locSplited.length - 1].split('?')[1]
+        const newLocation = `http://casamento.urielbelo.com/negar_presenca/${name}`
+        window.location.href = newLocation
+    </script>
+</body>
+</html>
